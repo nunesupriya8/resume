@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resume</title>
+    <style>
+        .totaldiv{
+            width:50pc;
+            height:65pc;
+            margin: 0.3pc;
+            background-color: white;
+        }
+        .lsaidediv{
+            width: 15pc;
+            height: 65pc;
+            background-color:lavender;
+            float: left;
+        }
+        .rsaidediv{
+            width: 35pc;
+            height:100pc;
+            float: right;
+        }
+        .details{
+            width: 35pc;
+            height: 8pc;
+            background-color: lightpink;
+            margin-top: -1.4pc;
+        }
+        .description {
+            height: 92pc;
+            margin-left: 1pc;
+        }
+        .name{
+            text-align: center;
+        }
+        .imag{
+            width: 8pc;
+            height:8pc ;
+            border-radius: 10pc;
+            position: absolute;
+            margin-left:3pc;
+            margin-top: 2pc;
+        }
+        .headings{
+            width:20pc;
+            background-color:lightgray;
+            margin-left: -1pc;
+            text-align: justify;
+        }
+        .contact{
+            height: 1pc;
+            width: 1pc;
+            margin-left: 1pc;
+            margin-top: 1pc;
+        }
+        .about{
+            margin-left: 2pc;
+        }
+        .projectdesc{
+            margin-right: 0.1pc;
+            text-align: justify;
+
+        }
+        .education-title{
+            margin-top: 11pc;
+            text-decoration: underline;
+        }
+        .info{
+            margin-top: -1pc;
+        }
+    </style>
+</head>
+<body style="background-color: lightblue">
+<div class="totaldiv">
+    <div class="lsaidediv">
+        <img class="imag" src="{% static 'css/images/pic.jpeg' %}">
+        <h2 class="education-title">Education</h2>
+        <ul class="education-list">
+            <li class="li-wrap">
+                <p class="info">2019-2022</p>
+                <p class="info">Electronics & Communication Engineering</p>
+                <p class="info">Vaagdevi Engineering College,Warangal</p> <br/>
+            </li>
+            <li class="li-wrap">
+                <p class="info">2016-2019</p>
+                <p class="info">Electronics & Communication Engineering</p>
+                <p class="info">Sahaja institute of Technology and Science</p> <br/>
+
+            </li>
+            <li class="li-wrap">
+                <p class="info">2015-2016</p>
+                <p class="info">SSC</p>
+                <p class="info">Ts-Model School Mallial</p> <br/>
+            </li>
+        </ul>
+        <h3 style="text-decoration: underline">LANGUAGES</h3>
+        <ul>
+            <li >
+                <p>Telugu</p>
+                <progress max="100" value="95"></progress>
+            </li>
+            <li >
+                <p>Hindi</p>
+                <progress max="100" value="60"></progress>
+            </li>
+            <li>
+                <p>English</p>
+                <progress max="100" value="85"></progress>
+            </li>
+        </ul>
+        <h3 style="text-decoration: underline">HOBBIES</h3>
+                       <ul>
+                           <li>Music</li>
+                           <li>travelling</li>
+                       </ul>
+
+
+
+
+
+    </div>
+    <div class="rsaidediv">
+        <div class="details">
+            <h1 class="name">SUPRIYA NUNE</h1>
+            <img class="contact" src="{% static 'css/images/phoneicon.png' %}">
+            <span>+91-9100510793</span>
+            <img class="contact" src="{% static 'css/images/mail.png' %}">
+            <span>nunesupriya8@gmail.com</span>
+            <img class="contact" src="{% static 'css/images/images.png' %}">
+            <span>gangaram,peddapalli</span>
+        </div>
+        <div class="description">
+            <div class="headings">
+            <h1>About</h1>
+            </div>
+            <span class="about">To</span> place in a software company that offers a simulating learning environment for developing
+my knowledge and skills as a developer and do my best for company development. looking for entry
+            level employment where I can develop my ability.
+            <h1 class="headings">skills</h1>
+            <ul>
+                <li>Programming laguage:<span style="font-weight: bold "> Python(core & advance).</span></li> <br/>
+                <li>Frame works: <span style="font-weight: bold ">Django frame work.</span></li> <br/>
+                <li>Web-Technologies:<span style="font-weight: bold "> HTML,CSS.</span></li><br/>
+                <li>Database:<span style="font-weight: bold "> MySQL database</span></li><br/>
+                <li>Basic knowledge on version control system GIT and GitHub</li>
+
+            </ul>
+            <h1 class="headings">Academic-Projects</h1>
+            <span style="font-weight: bold">PROJECT-TITLE:</span>SMART SHOPPING TROLLEY WITH AUTOMATTED BILLING USING ARDUINO.<br/><br/>
+            <span style="font-weight: bold">DESCRIPTION:</span><br/>
+            <span class="projectdesc">This innovative project consists of an automated billing system which can be placed within
+the shopping trolley. whenever the shopper puts any product in trolley it is detected by the RFID module and is
+displayed on LCD along with the price of the product. As the shopper goes on adding products, all
+products are detected by the module and therefore the price will increase accordingly. In case if
+customer changes his/her mind and doesn’t want any product added in the trolley he/she can remove it
+            and the price will be deducted automatically and total amount will be displayed on LCD.</span><br/><br/>
+            <span style="font-weight: bold">PROJECT-TITLE:</span>IOT BASED OIL PURITY MONITORING SYSTEM<br/><br/>
+            <span style="font-weight: bold">DECSRIPTION:</span>This project is designed to measure the purity of oil in the vehicles.To know the purity of oil first we have to dip the PH
+sensor probes in to the oil then it senses the purity of oil and then sensed values are send to the Arduino
+which process the further process and send the information to the lcd display. then to see the result we
+have to press the push button switch after that the results will be send to the speaker which produce the purity of oil in the form of audio, and the results also send to the user server where we can also see the
+previous results in the mobile using wi-fi module.
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
